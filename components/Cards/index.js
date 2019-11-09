@@ -18,9 +18,10 @@
 //
 // Create a card for each of the articles and add the card to the DOM.
 const cardcontainer = document.querySelector('.cards-container');
+
 EmCards = async url =>{
     try{ 
-        Response= await axios.get(url);
+        response = await axios.get(url);
         const javascript = response.data.articles.javascript;
         const bootstrap = response.data.articles.bootstrap;
         const technology = response.data.articles.technology;
